@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="index.html" />
+
+    <meta
+      name="description"
+      content="A Web Design Company In The Philippines That Work Closely With Their Partners To Develop Websites That Reaches Business Goals."
+    />
+    <meta name="keywords" content="" />
+
+    <!--Social Media Display-->
+    <meta
+      property="og:title"
+      content="Centennial Web Design: A Web Design Company In The Greater Toronto Area | Whitby, ON"
+    />
+    <meta
+      property="og:description"
+      content="A Web Design Company In The Philippines That Work Closely With Their Partners To Develop Websites That Reaches Business Goals."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://designodyssey.tech/" />
+    <meta property="og:image" content="/assets/images/social.png" />
+    <meta property="og:image:secure_url" content="/assets/images/social.png" />
+
+    <!--Favicons-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png@v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!-- Preload -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/svgs/first_3_-removebg-preview.svg"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/roboto-v30-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/roboto-v30-latin-700.woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="css/root.css" />
+
+    <link rel="preload" as="image" href="assets/svgs/hero.svg" />
+
+    <!-- Loading in page specific CSS sheets from css block -->
+    <link rel="stylesheet" href="css/critical.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!--Defer loading the whole page css-->
+    <link
+      rel="stylesheet"
+      href="css/home.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <!-- Defer cta and footer files -->
+    <link
+      rel="stylesheet"
+      href="css/cta.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <link
+      rel="stylesheet"
+      href="css/footer.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+    <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ECFBG8H2ML"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ECFBG8H2ML");
+    </script>
+
+    <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+    <title>
+      Centennial Web Design: A Web Design Company In The Greater Toronto Area |
+      Whitby, ON
+    </title>
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="index.html#main"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <!-- prettier-ignore -->
+                <a  class="cs-active cs-li-link"  href="index.html">
+                Home
+              </a>
+              </li>
+              <li class="cs-li">
+                <!-- prettier-ignore -->
+                <a  class="cs-li-link"  href="index.html#sbs-521">
+                About
+              </a>
+              </li>
+              <li class="cs-li">
+                <!-- prettier-ignore -->
+                <a  class="cs-li-link"  href="blog/index.html">
+                Blog
+              </a>
+              </li>
+              <!-- Hides the navigation link in desktop and tablet -->
+              <li class="cs-li hide">
+                <a href="/contact/index.html" class="cs-li-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="/contact/index.html" class="cs-button-solid cs-nav-button"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============================================ -->
+      <!--                   Hero                       -->
+      <!-- ============================================ -->
+
+      <section id="hero-408">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">
+              <span class="cs-color">Small Business Web Design</span> +
+              Development
+            </h2>
+            <p class="cs-text">
+              No WordPress or other page builders. 100% hand-coded websites
+              designed to convert traffic into customers starting at $150/month.
+            </p>
+            <a href="/contact/index.html" class="cs-button-solid"
+              >GET IN TOUCH!</a
+            >
+          </div>
+          <div class="cs-stat-group">
+            <img src="assets/svgs/hero.svg" class="cs-background" />
+          </div>
+        </div>
+      </section>
+      <!-- ============================================ -->
+      <!--                    Services                  -->
+      <!-- ============================================ -->
+
+      <section id="services-1301">
+        <div class="cs-container slide-animation fade-bottom">
+          <div class="cs-content">
+            <div class="cs-flex-group">
+              <span class="cs-topper">Our Solutions</span>
+              <h2 class="cs-title">Solutions to Drive More Leads and Sales</h2>
+            </div>
+            <p class="cs-text">
+              Looking to elevate your biz? Our proven solutions boost leads and
+              accelerate sales, pushing you ahead of the competition. Climb
+              higher, faster.
+            </p>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/svgs/seo.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">SEO</h3>
+                <p class="cs-item-text">
+                  Skyrocket your online visibility, organic traffic, and sales
+                  with our expert website content optimization services.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/svgs/web-design.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">Web Design</h3>
+                <p class="cs-item-text">
+                  Create a visually stunning website that builds trust with
+                  customers and drives engagement.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/svgs/Layer.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">System Development</h3>
+                <p class="cs-item-text">
+                  Solve a business process problem and free up your time to
+                  focus on what's really important: growing your business.
+                </p>
+              </a>
+            </li>
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <img
+                  class="cs-icon"
+                  src="assets/svgs/design.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  aria-hidden="true"
+                />
+                <h3 class="cs-h3">Logo Design</h3>
+                <p class="cs-item-text">
+                  Create a memorable, unique, and visually appealing logo that's
+                  the perfect face for your brand.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                Who Are We                    -->
+      <!-- ============================================ -->
+
+      <section id="sbs-521">
+        <div class="cs-container slide-animation fade-bottom">
+          <div class="cs-content">
+            <span class="cs-topper">Web Design Company</span>
+            <h2 class="cs-title">
+              Helping Businesses Grow with Digital Solutions
+            </h2>
+            <p class="cs-text">
+              Serving all of Greater Toronto Area, Centennial Web Designs is a
+              custom mobile, web, software, database, and cloud-based software
+              development company. We specialize and work exclusively with small
+              businesses with less than 200 employees. From everything B2b,
+              medical, bio-medical, and construction, to real estate, dental,
+              logistics, insurance, law, financial, and all points in between,
+              Centennial Web Designs has the business acumen, experience, and
+              team to take your business to the upper tiers. It’s what we do.
+            </p>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="assets/svgs/shield.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
+                Puts the partners' needs first
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="assets/svgs/pencil.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
+                Provide solutions that succeed
+              </li>
+              <li class="cs-li">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="assets/svgs/collaboration.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                />
+                Collaborates to reach business objectives
+              </li>
+            </ul>
+          </div>
+          <!--Image Group-->
+          <div class="cs-image-group">
+            <!--
+      <ul class="cs-stat-group">
+        <li class="cs-stat">
+          <span class="cs-number"></span>
+          <span class="cs-desc">Businesses helped</span>
+        </li>
+        <li class="cs-stat">
+          <span class="cs-number"></span>
+          <span class="cs-desc">Average quarter revenue growth increase</span>
+        </li>
+      </ul>
+			-->
+            <img
+              src="assets/svgs/who_are_we.svg"
+              alt="an illustration of two person who are collaborating to reach their goals"
+              class="cs-picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                 Side By Side                 -->
+      <!-- ============================================ -->
+
+      <section id="RPsbs-580">
+        <div class="cs-container slide-animation fade-left">
+          <img
+            src="assets/svgs/web-content.svg"
+            alt="an illustration of a woman deciding what to put in her website"
+            class="cs-picture"
+            loading="lazy"
+          />
+          <div class="cs-content">
+            <span class="cs-topper">Web Design</span>
+            <h2 class="cs-title">Web Design & Development Done Differently</h2>
+            <p class="cs-text">
+              What makes us unique in the development world is that we don't use
+              WordPress, frameworks, or page builders. We meticulously write the
+              code line by line. This gives us much more control over the
+              design, and the website performs lightning fast because there's no
+              bloated or messy code that slows it down.
+            </p>
+            <p class="cs-text">
+              Websites built by hand will out-perform most WordPress sites and
+              drag and drop page builders which could cost thousands of dollars.
+              When it comes to the web, the faster and more organized websites
+              win.
+            </p>
+            <a href="/contact/index.html" class="cs-button-solid">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--             Side By Side Reverse             -->
+      <!-- ============================================ -->
+
+      <section id="RPsbsr-580">
+        <div class="cs-container slide-animation fade-right">
+          <img
+            src="assets/svgs/seo-content.svg"
+            alt="an illustration of a man deciding what content will boost their customer reach"
+            class="cs-picture"
+            loading="lazy"
+          />
+          <div class="cs-content">
+            <span class="cs-topper">Search Engine Optimization</span>
+            <h2 class="cs-title">
+              Attract More Customers with Optimized Content
+            </h2>
+            <p class="cs-text">
+              As a leader of web development for small businesses in the GTA
+              area, we understand that everything is in a constant state of
+              flux, especially given the global pandemic of 2020 and 2021, the
+              rapid rise in technology capability, and rapid shifts in consumer
+              buying habits. Small businesses must continually adapt and improve
+              in order to compete… and the single best leveraging tool to
+              accomplish this goal is using technology in your business. Through
+              our offerings, we help small businesses meet their business
+              objectives by showcasing your services or product offerings, and
+              the benefits your customers and visitors receive.
+            </p>
+            <p class="cs-text">
+              At The Centennial Web Designs, each of our web development
+              projects focuses on fulfilling three core goals. First, we merge
+              function and design so they work together seamlessly. Next, we
+              develop customer stories to ensure they have the same visual
+              experience across multiple platforms. Lastly, everything we do is
+              done through the lens of SEO. How is Google indexing your site?
+              How is your site’s loading speed, craw lability, and meta tags,
+              all of which determine your site’s overall score?
+            </p>
+            <a href="/contact/index.html" class="cs-button-solid">Contact Us</a>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================ -->
+      <!--                    Services                  -->
+      <!-- ============================================ -->
+
+      <section id="portfolio">
+        <div class="cs-container slide-animation fade-bottom">
+          <div class="cs-content">
+            <div class="cs-flex-group">
+              <span class="cs-topper">Our Portfolio</span>
+              <h2 class="cs-title">Our Lovely Portfolio</h2>
+            </div>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Lorem ipsum dolor sit amet</h3>
+                <p class="cs-item-text">
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
+              </a>
+              <picture class="cs-picture">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/flavsmags-mockup-200w.webp 200w,
+                    /images/flavsmags-mockup-400w.webp 400w,
+                    /images/flavsmags-mockup-850w.webp 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    /images/flavsmags-mockup-200w.jpeg 200w,
+                    /images/flavsmags-mockup-400w.jpeg 400w,
+                    /images/flavsmags-mockup-850w.jpeg 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <img
+                  src="images/flavsmags-mockup-200w.jpeg"
+                  width="850"
+                  height="850"
+                  alt="flavsmags sports
+        tailoring mockup"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </li>
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <span class="cs-number">02</span>
+                <h3 class="cs-h3">Maecenas volutpat blandit aliquam etiam</h3>
+                <p class="cs-item-text">proin gravida hendrerit lectus a</p>
+              </a>
+              <picture class="cs-picture">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/shinu-mockup-200w.webp 200w,
+                    /images/shinu-mockup-400w.webp 400w,
+                    /images/shinu-mockup-850w.webp 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    /images/shinu-mockup-200w.jpeg 200w,
+                    /images/shinu-mockup-400w.jpeg 400w,
+                    /images/shinu-mockup-850w.jpeg 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <img
+                  src="images/shinu-mockup-200w.jpeg"
+                  width="850"
+                  height="850"
+                  alt="shinu mockup"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </li>
+            <li class="cs-item">
+              <a role="link" aria-disabled="true" class="cs-link">
+                <span class="cs-number">03</span>
+                <h3 class="cs-h3">Faucibus in ornare quam viverra</h3>
+                <p class="cs-item-text">Sit amet consectetur adipiscing elit</p>
+              </a>
+              <picture class="cs-picture">
+                <source
+                  type="image/webp"
+                  srcset="
+                    /images/mynmu-mockup-200w.webp 200w,
+                    /images/mynmu-mockup-400w.webp 400w,
+                    /images/mynmu-mockup-850w.webp 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    /images/mynmu-mockup-200w.jpeg 200w,
+                    /images/mynmu-mockup-400w.jpeg 400w,
+                    /images/mynmu-mockup-850w.jpeg 850w
+                  "
+                  sizes="(max-width: 600px) 400px, 850px"
+                />
+                <img
+                  src="images/mynmu-mockup-200w.jpeg"
+                  width="850"
+                  height="850"
+                  alt="mynmu veterinary clinic
+        mockup"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ============================================ -->
+      <!--                   Pricing                    -->
+      <!-- ============================================ -->
+
+      <section id="pricing-1087">
+        <div class="cs-container slide-animation fade-bottom">
+          <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Simple & Transparent Pricing</h2>
+            <p class="cs-text">
+              Unlock your digital growth potential with our comprehensive suite
+              of services, simple, and transparent pricing.
+            </p>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-package">On-page SEO</span>
+              <span class="cs-price"
+                ><span class="cs-small"></span>For Free<span
+                  class="cs-small"
+                ></span
+              ></span>
+              <p class="cs-item-p">Optimize your pages</p>
+              <a
+                href="/contact/index.html"
+                class="cs-button-solid cs-price-button"
+                >Book Appointment</a
+              >
+              <ul class="cs-ul">
+                <li class="cs-li">
+                  Keyword Research
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Content Optimization
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Title and Meta Description Optimization
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Image Optimization
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li class="cs-item cs-popular">
+              <span class="cs-package">Web Design</span>
+              <span class="cs-price"
+                >$150<span class="cs-small">/month</span></span
+              >
+              <p class="cs-item-p">Up to 5 pages</p>
+              <a
+                href="/contact/index.html"
+                class="cs-button-solid cs-price-button"
+                >Book Appointment</a
+              >
+              <ul class="cs-ul">
+                <li class="cs-li">
+                  24/7 Customer Support
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Maintenance
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Hosting
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Updates
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li class="cs-item">
+              <span class="cs-package">Web Design + Blogging</span>
+              <span class="cs-price"
+                ><span class="cs-small">Starting at</span>$250<span
+                  class="cs-small"
+                  >/month</span
+                ></span
+              >
+              <p class="cs-item-p">Blog Integration</p>
+              <a
+                href="/contact/index.html"
+                class="cs-button-solid cs-price-button"
+                >Book Appointment</a
+              >
+              <ul class="cs-ul">
+                <li class="cs-li">
+                  1000+ Word Post
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  Written By an SEO Specialist
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  1 Post Per Month
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+                <li class="cs-li">
+                  $150 Per Extra Post
+                  <img
+                    class="cs-icon"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/svgs/mech-check.svg"
+                    alt="checkmark"
+                    width="18"
+                    height="18"
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ============================================ -->
+      <!--                      CTA                     -->
+      <!-- ============================================ -->
+      <section id="cta-697">
+        <div class="cs-container">
+          <div class="cs-content">
+            <h2 class="cs-title">
+              Have Doubts? Get Your Queries Solved by Our Experts
+            </h2>
+            <a href="/contact/index.html" class="cs-button-solid"
+              >Get In Touch</a
+            >
+          </div>
+        </div>
+        <!--SVG Waves Background-->
+        <img
+          class="cs-background"
+          src="assets/svgs/cta-waves.svg"
+          alt="wave graphic"
+          width="1920"
+          height="318"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </section>
+    </main>
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-269">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="index.html">
+            <img
+              class="cs-logo-img light"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="assets/images/logo.png"
+              alt="logo"
+              width="240"
+              height="32"
+            />
+          </a>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Sitemap</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="index.html#sbs-521">About</a>
+          </li>
+
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="blog/index.html">Blog</a>
+          </li>
+
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="/contact/index.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Contact Info -->
+        <ul class="cs-contact">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <!--
+      <li class="cs-contact-li">
+        <a class="cs-contact-link" href="tel: "
+          ></a
+        >
+      </li>
+			-->
+          <li class="cs-contact-li">
+            <a
+              class="cs-contact-link"
+              href="mailto:centennialwebdesigns@gmail.com"
+              >centennialwebdesigns@gmail.com</a
+            >
+          </li>
+          <!-- Social Media -->
+          <li class="cs-contact-li cs-social-group">
+            <div class="cs-social">
+              <!--
+          <a
+            class="cs-social-link"
+            aria-label="visit google profile"
+            href=""
+          >
+            <img
+              class="cs-social-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+              alt="google"
+              width="11"
+              height="11"
+            />
+          </a>
+					-->
+              <!--
+          <a
+            class="cs-social-link"
+            aria-label="visit facebook profile"
+            href=""
+          >
+            <img
+              class="cs-social-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+              alt="facebook"
+              width="6"
+              height="11"
+            />
+          </a>
+					-->
+              <a
+                class="cs-social-link"
+                aria-label="visit linkedin profile"
+                href="https://www.linkedin.com/in/tobyavila/"
+              >
+                <img
+                  class="cs-social-img"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/svgs/linkedin-icon.svg"
+                  alt="linkedin"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="credit">
+        <a> Developed by Centennial Web Designs © All Rights Reserved. </a>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/nav.js"></script>
+    <script defer src="assets/js/slide-animation.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script defer>
+      document.addEventListener("scroll", (e) => {
+        const scroll = document.documentElement.scrollTop;
+        if (scroll >= 100) {
+          document.querySelector("body").classList.add("scroll");
+        } else {
+          document.querySelector("body").classList.remove("scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
